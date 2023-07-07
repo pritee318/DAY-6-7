@@ -1,0 +1,135 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>second page</title>
+<style>  
+body{  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  background-color: rgb(199, 139, 26);  
+}  
+.Registeration {  
+    padding: 50px;  
+  background-color: burlywood;  
+}  
+/* input[type=text], input[type=password] :hover{
+  background-color: rgb(147, 168, 100);
+  color: white
+} */
+  
+input[type=text], input[type=password] {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: white;  
+}  
+
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid white;  
+  margin-bottom: 25px;  
+}  
+/* .registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 1px;  
+  width: 100%;  
+  text-align: center;
+  border: none;
+  
+}   */
+a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+#btn{
+    display: block;
+    width: 103%;
+    border: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+#btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+.links{
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+    color: rgb(11, 11, 10);
+}
+#loginpage{
+    height: 20px;
+    width: 200px;
+    border: none;
+    background-color: orange;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 420px;
+
+}
+
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="Registeration">  
+  <center>  <h1> Student Registeration Form</h1> </center>  
+  <hr>  
+  <label><b>Firstname:</b></label>   
+  <input type="text" name="firstname" placeholder= "Firstname">   
+ 
+  <label><b> Lastname:</b></label>    
+  <input type="text" name="lastname" placeholder="Lastname">   
+  <div>  
+
+  <label>  <b> Course : </b> </label>   
+  <select>  
+  <option value="Course">Course</option>  
+  <option value="B.Tech">B.Tech</option>  
+  <option value="M.Tech">M.Tech</option>  
+  </select>  
+  </div>  
+  <div>  
+  <label>   
+  <b>Gender :  </b>
+  </label><br>  
+  <input type="radio" id="Male" value="Male" name="gender" required> <label for="Male">Male</label>   
+  <input type="radio" id="Female" value="Female" name="gender" required> <label for="Female">Female</label>   
+  <input type="radio" id="Other" value="Other" name="gender" required> <label for="Other">Other</label>  
+    
+  </div>  
+  <label>  <b> Phone :  </b> </label>  
+  <input type="text" name="country code" placeholder="Country Code"  value="+91" >   
+  <input type="text" name="phone" placeholder="phone no." required>   
+    
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" required>  
+  
+    <label for="psw-repeat"><b>Confirm password</b></label>  
+    <input type="password" placeholder="Confirm Password" required>  
+    <!-- <button type="submit" class="registerbtn">Register</button>     -->
+    <div class="registerbtn">
+        <button id="btn" type="button">Register</button>
+        <br><br>
+    </div>
+    <div id="loginpage">
+        <center>
+            <a class="links" href="/index.html">Log-in Page</a>
+            </center>
+    </div>
+</form>  
+</body>  
+</html>
